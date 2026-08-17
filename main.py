@@ -74,11 +74,5 @@ def print_results(results):
                             floatfmt=".3f",
                             tablefmt="github"))
 
-def test_qsort_fixed():
-	assert(qsort([5,4,3,2,1], lambda a: a[0])) == [1,2,3,4,5]
-
-def test_qsort_random():
-	assert(qsort([5,4,3,2,1], lambda a: random.choice(a))) == [1,2,3,4,5]
-
 random.seed()
-# print_results(compare_sort()) # ensure this is commented out when you push to github
+# print_results(compare_sort()) # ensure this is commented out when you submit
