@@ -16,7 +16,7 @@ variable $X$, Markov's inequality states that:
 
 $$\mathbf{P}[X \geq \alpha] \leq \frac{\mathbf{E}[X]}{\alpha}$$
 
-**1a)** What is the probability that Quicksort does $\Omega({n^2})$
+**1a) (5 pts)** What is the probability that Quicksort does $\Omega({n^2})$
   comparisons? \textbf{Hint:} Let $X$ be a random variable which outputs the amount of work done by Quicksort. Then to calculate the probability that the amount of work performed by Quicksort is $\Omega({n^2})$, you should decide what to set $\alpha$ to and what $\mathbf{E}[X]$ should be.
 .  
 .  
@@ -25,7 +25,7 @@ $$\mathbf{P}[X \geq \alpha] \leq \frac{\mathbf{E}[X]}{\alpha}$$
 .  
 
 
-**1b)** What is the probability that Quicksort does $10^c n \lg n$
+**1b) (5 pts)** What is the probability that Quicksort does $10^c n \lg n$
 comparisons, for a given $c>0$? What does this say about the
 deviation of the actual work from the expected work for Quicksort? \textbf{Hint:} Once again, use Markov's inequality deciding what $\alpha$ and $\mathbf{E}[X]$ should be.
 .  
@@ -51,7 +51,7 @@ correct and a failure probability of $1-\epsilon$. Furthermore let
 $\mathcal{C}(\mathcal{A}(\mathcal{I}))$ denote the output of
 (deterministically) checking $\mathcal{A}$'s solution. 
 
-**2a)** You find that $\epsilon$ is too small to be reliable. You want to be able to have \emph{any} guaranteed success
+**2a) (10 pts)** You find that $\epsilon$ is too small to be reliable. You want to be able to have \emph{any} guaranteed success
   probability $\delta$, for $\epsilon<\delta<1$. Use $\mathcal{A}$ to
   construct an algorithm $\mathcal{A}'$, where
   $\mathcal{A}'(\mathcal{I}, \delta)$ is the correct output with
@@ -66,7 +66,7 @@ $\mathcal{C}(\mathcal{A}(\mathcal{I}))$ denote the output of
 .  
 .  
 
-**2b)** Your boss and co-workers are impressed, but you want to do
+**2b) (6 pts)** Your boss and co-workers are impressed, but you want to do
   even better. Show how to convert $\mathcal{A}$ into an
   algorithm that always produces the correct result, but has an
   expected runtime that depends on $w(n)$ and a success probability
@@ -84,7 +84,7 @@ probability of worst-case behavior for any given input in
 selection. Let's look at how pivot choices affect Quicksort. For this
 question, refer to the code in `main.py` 
 
-**3a)**
+**3a) (8 pts)**
 
 Complete the implementations of `qsort` and `compare_sort` stubs. Feel
 free to take from code given in the lectures to  help you perform list
@@ -99,7 +99,7 @@ selecting a random pivot.
 .  
 
 
-**3b)**
+**3b) (8 pts)**
 
 Compare running times using `compare-qsort` between variants of
 Quicksort and the
@@ -119,7 +119,7 @@ a table of results, but feel free to plot the results as well.
 
 **Enter answers in `answers.md`**
 
-**3c)**
+**3c) (8 pts)**
 
 Python uses a sorting algorithm called [*Timsort*](https://en.wikipedia.org/wiki/Timsort), designed by Tim Peters. Compare the fastest of your sorting implementations to the Python sorting function `sorted`, conducting the tests in 3b above. Here you should no longer be testing the fixed pivot quicksort variant and
 should not be severely restricted by your systems recursion depth. Perform
